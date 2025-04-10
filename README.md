@@ -6,7 +6,7 @@ If you want to use the same directory structure as that in the Github, before ru
 The model code files are all saved in the scripts folder. 
 
 # The decision tree model
-The health economic model consists of a decision tree model and a Markov model. To use the decision tree model, first open the psa_decision_tree.R, which is used for probabilistic sensitivity analysis (PSA). When using it for deterministic analysis, set i = 1001. 
+The health economic model consists of a decision tree model and a Markov model. To use the decision tree model, first open the psa_decision_tree.R, which is used for probabilistic sensitivity analysis (PSA). When using it for deterministic analysis, set i = 1001. Currently, only deterministic data for cancer incidence and stage distribution is provided. 
 
 psa_decision_tree.R calls fn_master_decision_tree.R, which is the master function to run the decision tree. In it, 
 i = 1001: means using the deterministic parameters
