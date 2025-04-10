@@ -4,7 +4,7 @@
 
 # adapted from fn_master_decision_tree.R in HE_model folder
 
-master_decision_tree <- function(i=1001, byAge = TRUE, accuracy_file, adj_pop = FALSE, 
+master_decision_tree <- function(i=1001, byAge = TRUE, accuracy_file, adj_pop = TRUE, 
                                  cost_us_cdc=FALSE, cost_us_op=FALSE, cost_us_input=NA,
                                  us_sens_adj=0, us_spec_adj=0){
   
