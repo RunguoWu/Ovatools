@@ -9,7 +9,7 @@ The model code files are all saved in the scripts folder.
 The health economic model consists of a decision tree model and a Markov model. To use the decision tree model, first open the psa_decision_tree.R, which is used for probabilistic sensitivity analysis (PSA). When using it for deterministic analysis, set i = 1001. 
 
 psa_decision_tree.R calls fn_master_decision_tree.R, which is the master function to run the decision tree. In it, 
-I = 1001: means using the deterministic parameters
+i = 1001: means using the deterministic parameters
 byAge = TRUE: use the by-age accuracy for the CA125 test. The default. 
 accuracy_file: the name of the input accuracy file. Currently, we only provide the “byAgeOnly_niceUS” file. It has separate CA125 accuracy by age 50. You could make your accuracy file using the same structure of this file. 
 adj_pop = TRUE: use the CA125 tested population data. It is the default, and currently we only provide this population data.
