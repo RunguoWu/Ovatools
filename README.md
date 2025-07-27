@@ -1,7 +1,7 @@
 # Ovatools
-The health economic model codes for evaluating Ovatools
+The repo include R code for data preparation, parameter estimation and the health economic model codes for evaluating Ovatools
 
-If you want to use the same directory structure as that in the Github, before running, change the general working directory address to your local address in file_path.R
+Before running, change the general working directory address to your local address in file_path.R
 
 The model code files are all saved in the scripts folder. 
 
@@ -46,7 +46,8 @@ The functions allows probabilistic sensitivity analysis. When using it for deter
 
 The Markov model has integrated regression equations of survivals, quality of life and hospital inpatient care costs, and its output include annual probabilities of cancer death and non-cancer death, quality of life, and costs. The output can be saved by annual cycles or in an accumulative form for each individual. 
 
-
+# Post-simulation analysis
+After obtaining outcomes from the decision tree and Markov model, you use psa_post_anlaysis to combine the two parts of outcomes together and calculate the final outcomes including ICERs.
 
 
 
