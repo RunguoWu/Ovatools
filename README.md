@@ -1,5 +1,5 @@
 # Ovatools
-The repo include R code for data preparation, parameter estimation and the health economic model codes for evaluating Ovatools
+The code repo includes R code for data preparation, parameter estimation and the health economic model codes for evaluating Ovatools
 
 Before running, change the general working directory address to your local address in file_path.R
 
