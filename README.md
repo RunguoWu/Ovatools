@@ -1,7 +1,7 @@
 # Ovatools Health Economic evaluation
 The code repo includes R code for data preparation, parameter estimation and the health economic model codes for evaluating Ovatools
 
-Before running, change the general working directory address to your local address in file_path.R
+The directory and file addresses in the code files may not be correct due to relocating to Github. Before running, you should correct these addresses to your local PC address. You can use the file_path.R file to facilitate this process. 
 
 The model code files are all saved in the scripts folder. 
 
