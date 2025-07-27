@@ -1,11 +1,11 @@
-# Ovatools
+# Ovatools Health Economic evaluation
 The code repo includes R code for data preparation, parameter estimation and the health economic model codes for evaluating Ovatools
 
 Before running, change the general working directory address to your local address in file_path.R
 
 The model code files are all saved in the scripts folder. 
 
-# The decision tree model
+## The decision tree model
 The health economic model consists of a decision tree model and a Markov model. To use the decision tree model, first open the psa_decision_tree.R, which is used for probabilistic sensitivity analysis (PSA). When using it for deterministic analysis, set i = 1001. Currently, only deterministic data for cancer incidence and stage distribution is provided. 
 
 psa_decision_tree.R calls fn_master_decision_tree.R, which is the master function to run the decision tree. In it, 
@@ -37,7 +37,7 @@ The model estimates proportions of other cancers, including uterine (uter), lowe
  
 The model estimates the cost in the diagnostic pathway in primary care.
 
-# The Markov model
+## The Markov model
 Use master_msm_psa.R to run the Markov model, calling fn_msm_stpm2.R for functions.
 
 The Markov model can predict long-term survivals for patients diagnosed at early or late stage of ovarian, lung, uterus, pancreatic, lower gastrointestinal and all other cancers, and not diagnosed with cancer. By default, the model's first 8 years of cancer death rate parameters are informed by flexible parameteric survival models using CPRD and its linked cancer and death registration data, and after 8 years, these parameters are informed by national mortality statistics by age, sex for death caused by cancer. 
