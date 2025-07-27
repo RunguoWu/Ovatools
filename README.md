@@ -46,7 +46,7 @@ The functions allows probabilistic sensitivity analysis. When using it for deter
 
 The Markov model has integrated regression equations of survivals, quality of life and hospital inpatient care costs, and its output include annual probabilities of cancer death and non-cancer death, quality of life, and costs. The output can be saved by annual cycles or in an accumulative form for each individual. 
 
-# Post-simulation analysis
+## Post-simulation analysis
 After obtaining outcomes from the decision tree and Markov model, you use psa_post_anlaysis to combine the two parts of outcomes together and calculate the final outcomes including ICERs.
 
 
