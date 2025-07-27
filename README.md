@@ -38,3 +38,18 @@ The model estimates proportions of other cancers, including uterine (uter), lowe
 The model estimates the cost in the diagnostic pathway in primary care.
 
 # The Markov model
+Use master_msm_psa.R to run the Markov model, calling fn_msm_stpm2.R for functions.
+
+The Markov model can predict long-term survivals for patients diagnosed at early or late stage of ovarian, lung, uterus, pancreatic, lower gastrointestinal and all other cancers, and not diagnosed with cancer. By default, the model's first 8 years of cancer death rate parameters are informed by flexible parameteric survival models using CPRD and its linked cancer and death registration data, and after 8 years, these parameters are informed by national mortality statistics by age, sex for death caused by cancer. 
+
+The functions allows probabilistic sensitivity analysis. When using it for deterministic analysis, set i = 1001.
+
+The Markov model has integrated regression equations of survivals, quality of life and hospital inpatient care costs, and its output include annual probabilities of cancer death and non-cancer death, quality of life, and costs. The output can be saved by annual cycles or in an accumulative form for each individual. 
+
+
+
+
+
+
+
+
