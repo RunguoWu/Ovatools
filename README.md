@@ -5,6 +5,8 @@ The directory and file addresses in the code files may not be correct due to rel
 
 The model code files are all saved in the scripts folder. 
 
+I provide a few parameters in the working_data folder, which could be used for deterministic analysis. For probabilistic analysis, the parameter files are not available due to large size.
+
 ## The decision tree model
 The health economic model consists of a decision tree model and a Markov model. To use the decision tree model, first open the psa_decision_tree.R, which is used for probabilistic sensitivity analysis (PSA). When using it for deterministic analysis, set i = 1001. Currently, only deterministic data for cancer incidence and stage distribution is provided. 
 
