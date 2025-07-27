@@ -16,6 +16,8 @@ library(rstpm2)
 source("./github/file_path.R")
 source(file.path(scripts, "fn_msm_stpm2.R"))
 
+num_cores <- 24
+
 run_list <- list(
   list(type = "ova", value = 1),
   list(type = "ova", value = 0),
@@ -39,7 +41,7 @@ for (s in 1:13) {
   
   use_mort <- TRUE # TRUE means use UK mortality (CD/NCD) after 8 years
   
-  n_cores <- 2
+  n_cores <- num_cores
   
   # total PSA number
   n_sim <- 1000
