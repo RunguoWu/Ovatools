@@ -13,7 +13,7 @@ library(parallel)
 library(doSNOW)
 library(rstpm2)
 
-source("D:/OneDrive - Queen Mary, University of London/Work in QMUL/SPCR ovatools/github/file_path.R")
+source("./github/file_path.R")
 source(file.path(scripts, "fn_msm_stpm2.R"))
 
 run_list <- list(
@@ -32,8 +32,7 @@ run_list <- list(
   list(type = "benign", value = 0)
 )
 
-for (s in 1:1) {
-   # s=1
+for (s in 1:13) {
   
   c_type <- run_list[[s]][["type"]]
   stage_late <- run_list[[s]][["value"]]
